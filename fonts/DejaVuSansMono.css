@@ -1,0 +1,4 @@
+@font-face {  
+    font-family: DejaVuSansMono;
+    src: local('DejaVuSansMono'), url(DejaVuSansMono.ttf) format("truetype");
+}
