@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="turing.css"/>
 </head><body>
 
+<h1>JavaScript Turing Machine</h1>
+
 <div class="well well-small" style="margin:10px 0;">
     <div style="overflow:auto;">
         <div id="tape"></div>
@@ -74,6 +76,12 @@
 
 
 
+</div>
+
+<div class="footer">
+    (C) 2012 Samuele ~redShadow~ Santi - Under GPLv2 or later.<br/>
+    Source code available on <a href="https://github.com/rshk/Turing">GitHub</a>.<br/>
+    For information on how to write programs, see <a href="http://en.wikipedia.org/wiki/Brainfuck">Brainfuck on Wikipedia</a>.
 </div>
 
 <script type="text/javascript">
@@ -177,7 +185,7 @@ $(function(){
                     break;
                 case ',':
                     var stdin_text = $('#program-input').val();
-                    $tape.turing('opSet', null, stdin_text.charCodeAt(0));
+                    $tape.turing('opSet', null, stdin_text.charCodeAt(0) || 0);
                     $('#program-input').val(String.prototype.slice.call(stdin_text, 1));
                     break;
             }

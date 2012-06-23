@@ -81,3 +81,11 @@ button:disabled{
     max-height: 100px;
     overflow: auto;
 }
+.footer {
+    margin: 10px 0 0 0;
+    border-top: solid 1px #ddd;
+    padding: 5px;
+    text-align: right;
+    color: #AAA;
+    font-size: .9em;
+}
